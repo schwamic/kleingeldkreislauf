@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/universal
+{
+	"name": "Node Container",
+	"dockerComposeFile": ["../../docker-compose.yml"],
+	"service": "kleingeldkreislauf",
+	"shutdownAction": "none",
+	"workspaceFolder": "/workspace/kleingeldkreislauf",
+	"postCreateCommand": "bash scripts/post_create_app.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint"
+			]
+		}
+	}
+}
