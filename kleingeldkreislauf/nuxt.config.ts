@@ -9,7 +9,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint'],
+  lucide: {
+    namePrefix: 'Lucide',
+  },
+  modules: ['@nuxt/eslint', 'nuxt-lucide-icons'],
   postcss: {
     plugins: {
       tailwindcss: {},
